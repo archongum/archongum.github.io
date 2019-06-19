@@ -1,5 +1,5 @@
 # Site settings
-title: Archon's Lair
+title: Archon | Lair
 SEOTitle: Archon | Lair
 header-img: img/header.jpg
 email: qq349074225@live.com
@@ -14,9 +14,12 @@ future: true
 # SNS settings
 RSS: false
 github_username:    archongum
-weibo_username:     ArchonGum
-twitter_username:   archongum
-zhihu_username:     alexgum
+stackoverflow_username:     9756912/archon
+docker_username:    dockergum
+csdn_username:      c13232906050 
+# weibo_username:     ArchonGum
+# zhihu_username:     alexgum
+# twitter_username:   archongum
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
@@ -103,11 +106,15 @@ page-mathjax: false
 # Friends
 friends: [
     {
-        title: "f1",
-        href: "f1"
+        title: "CSDN",
+        href: "https://blog.csdn.net/c13232906050"
     },
     {
-        title: "f2",
-        href: "f2"
+        title: "Stack Overflow",
+        href: "https://stackoverflow.com/users/9756912/archon"
+    },
+    {
+        title: "DockerGum",
+        href: "https://cloud.docker.com/u/dockergum"
     }
 ]
