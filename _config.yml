@@ -71,7 +71,7 @@ netease_comment: false
 
 # Analytics settings
 # Baidu Analytics 
-# ba_track_id: [your track id]
+ba_track_id: 9924571e27fcaad8611ab32ee5b91fec
 
 # Google Analytics
 ga_track_id: 
