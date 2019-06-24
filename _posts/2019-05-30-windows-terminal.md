@@ -11,6 +11,13 @@ tags:
   - windows
 ---
 
+# Official Previous
+https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701
+
+---
+
+# Manual Build no longer update
+
 ## 更新时间
 2019-05-30
 
