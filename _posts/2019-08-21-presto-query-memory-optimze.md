@@ -89,7 +89,7 @@ JOIN test_grouped_join3
 ON key2 = key3
 ```
 
-执行计划结果
+执行计划结果（太长，可忽略）
 
 ```
 Fragment 0 [SINGLE]
@@ -177,7 +177,7 @@ JOIN test_grouped_join3
 ON key2 = key3
 ```
 
-执行计划结果
+执行计划结果（太长，可忽略）
 
 ```
 Fragment 0 [SINGLE]
@@ -242,9 +242,7 @@ Fragment 1 [hive:buckets=13, hiveTypes=[bigint]]
 
 上述的SQL join了3个表（数据相同），所以
 
-$$
-n = \frac{a}{m * 3} = \frac{102MB}{7.8MB * 3} \approx 4.4
-$$
+<img src="https://latex.codecogs.com/gif.latex?n&space;=&space;\frac{a}{m&space;*&space;3}&space;=&space;\frac{102MB}{7.8MB&space;*&space;3}&space;\approx&space;4.4" title="n = \frac{a}{m * 3} = \frac{102MB}{7.8MB * 3} \approx 4.4" />
 
 `concurrent_lifespans_per_task`设置小于4.4才能不OOM
 
