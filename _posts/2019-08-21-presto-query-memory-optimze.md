@@ -236,7 +236,7 @@ Fragment 1 [hive:buckets=13, hiveTypes=[bigint]]
 
 表的桶数量为13（设为t）一个表读到内存之后是102MB，所以一个桶占用内存=102MB/13=7.8MB（设为m）。
 
-测试Presto为单机，-Xmx=1GB，单个query最大占用（query.max-memory-per-node）为102MB（设为a，默认0.1*Max JVM大小）。
+测试Presto为单机，-Xmx=1GB，单个query最大占用（query.max-total-memory）为102MB（设为a，默认0.1*Max JVM大小）。
 
 最大并行处理桶的数量（设为n）
 
@@ -253,7 +253,18 @@ Fragment 1 [hive:buckets=13, hiveTypes=[bigint]]
 SQL Error [131079]: Query failed (#20190821_054413_00220_r4jkt): Query exceeded per-node user memory limit of 102.40MB [Allocated: 102.38MB, Delta: 59.11kB, Top Consumers: {HashBuilderOperator=102.38MB}]
 ```
 
-**注意：这是理论值，仅供参考价值。**（受“分桶不可能做到平均”等因素影响）
+**注意：这是理论值，仅供参考价值。**（受“分桶不可能做到平均”，“Presto集群每台机分配到的数据大小不相同”等因素影响）
+
+---
+
+# 使用场景
+
+- 假设单个query最大内存为1GB
+- 假设所有参与join的表，读到内存后的大小为10GB
+
+场景1：将所有的表，根据相同的字段分成10个桶（或更多，因为实际情况需要预留更多的空间。如预留20%）；设置`concurrent_lifespans_per_task=1`。
+
+场景2：将所有的表，根据相同的字段分成20个桶（或更多，因为实际情况需要预留更多的空间。如预留20%）；设置`concurrent_lifespans_per_task=2`。
 
 ---
 
