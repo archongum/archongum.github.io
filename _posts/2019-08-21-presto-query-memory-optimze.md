@@ -236,7 +236,7 @@ Fragment 1 [hive:buckets=13, hiveTypes=[bigint]]
 
 表的桶数量为13（设为t）一个表读到内存之后是102MB，所以一个桶占用内存=102MB/13=7.8MB（设为m）。
 
-测试Presto为单机，-Xmx=1GB，单个query最大占用（query.max-total-memory）为102MB（设为a，默认0.1*Max JVM大小）。
+测试Presto为单机，-Xmx=1GB，单个query最大占用（query.max-memory-per-node）为102MB（设为a，默认0.1*Max JVM大小）。
 
 最大并行处理桶的数量（设为n）
 
