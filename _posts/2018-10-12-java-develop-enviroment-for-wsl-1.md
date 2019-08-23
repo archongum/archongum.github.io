@@ -258,4 +258,6 @@ git config --global credential.helper store
 [redisdesktop linux](http://docs.redisdesktop.com/en/latest/install/#ubuntu-debian-fedora-centos-opensuse-archlinux-other-linux-di)
 [redisdesktop build fail](https://github.com/uglide/RedisDesktopManager/issues/4118)
 
+---
 
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.

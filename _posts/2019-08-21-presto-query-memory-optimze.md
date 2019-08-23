@@ -275,3 +275,7 @@ SQL Error [131079]: Query failed (#20190821_054413_00220_r4jkt): Query exceeded 
 
 [1]: https://prestodb.github.io/blog/2019/08/05/presto-unlimited-mpp-database-at-scale
 [2]: https://github.com/prestosql/presto/blob/master/presto-hive/src/test/java/io/prestosql/plugin/hive/TestHiveIntegrationSmokeTest.java#L2832
+
+---
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
